@@ -28,7 +28,7 @@ Critical data was removed from the database to mimic a compromise of data integr
 `UPDATE TOP (100) Sales.Customer
 SET AccountNumber = NULL`
 
-`ELETE TOP (100)
+`DELETE TOP (100)
 FROM Sales.CreditCard;`
 
 The database was then restored just before the point where the data loss occured. The restored database is now the main production enviorment.
